@@ -93,7 +93,7 @@ const turnoComputadora = (puntosMinimos) => {
         } else if (puntosMinimos > 21) {
             alert('La computadora gana ');
         }
-        else if (puntosComputadora > 21) {
+        else if (puntosComputadora > 21 || puntosMinimos == 21) {
             alert('Ganaste');
         }
         else {
