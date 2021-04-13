@@ -33,10 +33,6 @@ const crearDeck = () => {
     return deck;
 }
 
-
-crearDeck();
-console.log(deck);
-// Esta funcion me permite tomar una carta
 const pedirCarta = () => {
 
 
