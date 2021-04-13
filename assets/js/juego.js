@@ -63,34 +63,27 @@ const turnoComputadora = (puntosMinimos) => {
 
     do {
 
+        const carta = pedirCarta();
+        puntosComputadora = puntosComputadora + valorCarta(carta);
+        puntosHTML[1].innerText = puntosComputadora;
 
+        const imgCarta = document.createElement('img');
+        imgCarta.src = `assets/cartas/${carta}.png`;
+        imgCarta.classList.add('carta')
+
+        divCartasComputadora.append(imgCarta);
+
+        if (puntosMinimos > 21) {
+            break;
+        }
+        else if (puntosMinimos === 21) {
+            break;
+        }
 
 
 
 
     } while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21));
-
-
-    const carta = pedirCarta();
-    puntosComputadora = puntosComputadora + valorCarta(carta);
-    puntosHTML[1].innerText = puntosComputadora;
-
-    const imgCarta = document.createElement('img');
-    imgCarta.src = `assets/cartas/${carta}.png`;
-    imgCarta.classList.add('carta')
-
-    divCartasComputadora.append(imgCarta);
-
-    if (puntosMinimos > 21) {
-        break;
-    }
-    else if (puntosMinimos === 21) {
-        break;
-    }
-
-
-
-
 
     setTimeout(() => {
 
