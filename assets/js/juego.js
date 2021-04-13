@@ -34,6 +34,8 @@ const crearDeck = () => {
 }
 
 
+crearDeck();
+
 // Esta funcion me permite tomar una carta
 const pedirCarta = () => {
 
