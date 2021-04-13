@@ -33,6 +33,10 @@ const crearDeck = () => {
     return deck;
 }
 
+
+crearDeck();
+console.log(deck);
+// Esta funcion me permite tomar una carta
 const pedirCarta = () => {
 
 
@@ -57,7 +61,14 @@ const valorCarta = (carta) => {
 //turno de la computadora 
 const turnoComputadora = (puntosMinimos) => {
 
-    while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21));
+    do {
+
+
+
+
+
+
+    } while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21));
 
 
     const carta = pedirCarta();
@@ -71,7 +82,7 @@ const turnoComputadora = (puntosMinimos) => {
     divCartasComputadora.append(imgCarta);
 
     if (puntosMinimos > 21) {
-        // break;
+        break;
     }
     else if (puntosMinimos === 21) {
         break;
