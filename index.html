@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
+    <header class="titulo">
+        BlackJack
+    </header>
 
-  <di>
-
-    <div class="containerform">
-        <form action="javascript:saluda();">
-            <h1>Saludo</h1>
-            <input type="text"  id="nombre" placeholder="Nombre"><br><br>
-            <input type="number"  id="edad" placeholder="Edad"><br><br>            
-            
-            <button type="submit">Enviar Mensaje</button>
-        </form>
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
+        </div>
     </div>
-<div>
-    
-  <script src="js/main.js"></script>
-  
-</div>
+
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <div id="jugador-cartas">
+                <!-- <img class="carta" src="assets/cartas/2C.png" alt=""> -->
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>JComputadora - <small>0</small></h1>
+            <div id="computadora-cartas">
+                <!-- <img class="carta" src="assets/cartas/3C.png" alt=""> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
 </body>
-
 </html>
-
-
-
-
