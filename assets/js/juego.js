@@ -71,7 +71,7 @@ const turnoComputadora = (puntosMinimos) => {
     divCartasComputadora.append(imgCarta);
 
     if (puntosMinimos > 21) {
-        break;
+        // break;
     }
     else if (puntosMinimos === 21) {
         break;
